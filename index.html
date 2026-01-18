@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+
+<head>
+  <title>SEF</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: rgb(19, 13, 0);">
+  <nav class="navbar navbar-expand-lg px-3 fixed-top" style="opacity: 0.88;">
+    <div class="container-fluid">
+      <img src="images/download.png"  alt="imageimage" width="70px" height="45=px">
+      <a href="#" class="navbar-brand sef  "  style="color:rgb(233, 167, 5); font-size: 22px;   border-right: 2px solid rgb(255, 245, 212);" ><b>  &nbsp; SEF ACADEMY &nbsp;</b></a>
+      <button  class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbaricon" aria-controls="navbaricon" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon " id="icon5" ><i class="fa-solid fa-bars"></i></span>
+       </button>
+      <div class="collapse navbar-collapse " id="navbaricon">
+        <ul class="navbar-nav me-auto " style="margin-right: auto;">
+          <li class="nav-item">
+            <a href="#" class="nav-link " aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link ">About Us</a>
+          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Courses</a>
+              <div class="dropdown-menu " style="width: 180px; background-color: rgb(42, 30, 6); border-radius: 10px; border: 0.5px solid rgb(255, 169, 0);">
+                <div class="dropdown-header" style="font-size: 16px; color: rgb(255, 235, 170);">Front End</div>
+                <a class="dropdown-item" style="color: rgb(255, 196, 0);" href="#">HTML</a>
+                <a class="dropdown-item" style="color: rgb(255, 196, 0);" href="#">CSS</a>
+                <a class="dropdown-item" style="color: rgb(255, 196, 0);" href="#">J.SCRIPT</a>
+                <a class="dropdown-item" style="color: rgb(255, 196, 0);" href="#">BOOTSTRAB</a>
+                <div class="dropdown-divider" style="border: 1px solid rgb(255, 235, 170);"></div>
+                <div class="dropdown-header" style="font-size: 16px; color: rgb(255, 235, 170);">Back End</div>
+                <a class="dropdown-item" style="color: rgb(255, 196, 0);" href="#">Node.js</a>
+                <a class="dropdown-item" style="color: rgb(255, 196, 0);" href="#">MySQL</a>
+              </div>
+            </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link ">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <div class="input-group">
+          <input class="serchinp1 border-warning" style="border: 2px solid rgb(255, 196, 0);" type="text" placeholder="Search">
+          <div class="input-group-append">
+            <button class="btn btn-warning" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+          <button type="button" class="btn btn-outline-warning " data-toggle="modal" data-target="#login1" style="margin-left: 5px;">Login</button>
+        </form>
+      </div>
+    </div>
+</nav>
+  <div class="modal fade" id="login1">
+    <div class="modal-dialog ">
+      <div class="modal-content " style="background-color: rgb(255, 249, 230);  box-shadow: 0px 0px 5px 1px rgb(0, 0, 0) inset; width: 420px; margin: auto; border-radius: 10px;">
+        <div class="modal-header" style="border-bottom: none; margin-bottom: -30px;">
+          <h3 class="modal-title" style="color: rgb(255, 169, 0);">Log In</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="margin-bottom: -10px;">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="inp1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="inp1" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="inp2" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inp2" placeholder="**********">
+            </div>
+            <input type="checkbox"><span>&nbsp; Rememper Me</span>
+        </div>
+        <div class="modal-footer" style="border-top: none;">
+          <button type="button" class="btn btn-warning w-100" data-dismiss="modal">Log in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<main>
+<!-- d-flex flex-column position-fixed top-50 end-0 translate-middle-y me-2 gap-3 social-icons -->
+
+<div class="d-flex flex-column gap-3 top-50 fixed-top mr-2" style="width: fit-content; margin-left: auto; top:31.9%; font-size: 19px;">
+    <a href="#" class="text-warning"><i class="fa-brands fa-square-facebook fa-2x mb-3"></i></a>
+    <a href="#" class="text-warning"><i class="fa-brands fa-square-twitter fa-2x mb-3"></i></a>
+    <a href="#" class="text-warning"><i class="fa-brands fa-square-whatsapp fa-2x mb-3"></i></a>
+    <a href="#" class="text-warning"><i class="fa-brands fa-square-instagram fa-2x mb-3"></i></a>
+    <a href="#" class="text-warning"><i class="fa-brands fa-linkedin fa-2x mb-3"></i></a>
+
+</div>
+
+
+<div id="demo2" class="carousel slide" data-ride="carousel" >
+  <ul class="carousel-indicators">
+    <li data-target="#demo2" data-slide-to="0" class="active bg-warning" aria-current="true" aria-label="Slide 1"></li>
+    <li data-target="#demo2" data-slide-to="1" class="bg-warning" aria-label="Slide 2"></li>
+    <li data-target="#demo2" data-slide-to="2" class="bg-warning" aria-label="Slide 3"></li>
+    <li data-target="#demo2" data-slide-to="3" class="bg-warning" aria-label="Slide 4"></li>
+    <li data-target="#demo2" data-slide-to="4" class="bg-warning" aria-label="Slide 5"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/FRONTEND.jpg" style="background-size: cover;" alt="image" width="1100" height="500">
+      <div class="carousel-caption d-block">
+        <div class="overlay w-75 mx-auto rounded p-3 border border-warning"  style="background-color: rgb(34, 24, 6,0.7);">
+          <h4 class="fs-5 fs-md-3">FRONTEND</h4>
+          <p class="fs-6 fs-md-5">The FRONTEND 💵 That is very amazing for creating websites.</p>
+          <button class="btn btn-outline-warning me-2 text-light">Call Us</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/html.jpg" alt="image" width="1100" height="500">
+      <div class="carousel-caption d-block">
+          <div class="overlay w-75 mx-auto rounded p-3 border border-warning" style="background-color: rgb(34, 24, 6,0.7);">
+            <h4 class="fs-5 fs-md-3">HTML</h4>
+            <p class="fs-6 fs-md-5">HTML Coding <b style="color: rgb(255, 196, 0);"> < . . . > </b> That is Hyper Text Marhup language.</p>
+            <button class="btn btn-outline-warning me-2 text-light">Call Us</button>
+          </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/Css.jpg" alt="imageimage" width="1100" height="500">
+      <div class="carousel-caption d-block">
+        <div class="overlay w-75 mx-auto rounded p-3 border border-warning" style="background-color: rgb(34, 24, 6,0.7);">
+          <h4 class="fs-5 fs-md-3">CSS</h4>
+          <p class="fs-6 fs-md-5">CSS <b style="color: rgb(255, 196, 0);"> { . . . } </b> This is The language Tat Creade The style of The website .</p>
+          <button class="btn btn-outline-warning me-2 text-light">Call Us</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/BACKEND.png" alt="imageimage" width="1100" height="500">
+      <div class="carousel-caption d-block">
+        <div class="overlay w-75 mx-auto rounded p-3 border border-warning" style="background-color: rgb(34, 24, 6,0.7);">
+          <h4 class="fs-5 fs-md-3">BACKEND</h4>
+          <p class="fs-6 fs-md-5"> The BACKEND 💲 That is very amazing for creating DataBase.\.</p>
+          <button class="btn btn-outline-warning me-2 text-light">Call Us</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/sql.jpg" alt="imageimage" width="1100" height="500">
+      <div class="carousel-caption d-block">
+        <div class="overlay w-75 mx-auto rounded p-3 border border-warning" style="background-color: rgb(34, 24, 6,0.7);">
+          <h4 class="fs-5 fs-md-3">MYSQL</h4>
+          <p class="fs-6 fs-md-5"> MYSQL DataBase 💲 That is very amazing for creating DataBase.\.</p>
+          <button class="btn btn-outline-warning me-2 text-light">Call Us</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo2" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</main>
+<div class="container-fluid p-3 text-light" style="background: linear-gradient(to bottom right, rgb(9, 6, 0),rgb(34, 24, 6), rgb(87, 63, 10)); border-radius: 0; border-top:1px solid rgb(11, 11, 11) ; " >
+  <h2 style="color: rgb(255, 196, 0);">Welcome</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ad sapiente asperiores consequuntur dolorum esse, necessitatibus ipsam saepe minus laudantium facere vitae delectus a doloribus aliquam voluptas quae voluptatum. Illum.</p>
+  <button class="btn btn-warning text-dark"><b>Learn more</b></button>
+</div>
+<hr>
+<div class="container-fluid mt-1 p-5 " style="background: linear-gradient(to top left, rgb(9, 6, 0),rgb(34, 24, 6), rgb(87, 63, 10)); border-radius: 0; ">
+   <h3 class="text-light  text-center "><i><b>The Most Famous Courses in our Academy</b></i></h3>
+</div>
+<!-- //////////////////// -->
+
+
+<br>
+<div id="accordion">
+  <div  class="card" style="border:none; " >
+    <div  class="card-header" type="button" data-toggle="collapse" href="#collapseOne" style="background: linear-gradient(to bottom right, rgb(15, 9, 2),rgb(35, 23, 1), rgb(62, 43, 0)); border-radius: 0; border-bottom: 2px solid rgb(181, 167, 122);  ">
+      <button class="card-link" style="border: 0; background: none; color: rgb(255, 196, 0);">
+        HTML-Language
+      </button>
+    </div>
+    <div id="collapseOne" class="collapse" data-parent="#accordion">
+      <div class="card-body" style="background-color: rgb(255, 235, 170);">
+        A master of the wind. One mistake against him can cost you everything. Fast, fearless, and unstoppable when he gets momentum. 🌪️⚔️
+      </div>
+    </div>
+  </div>
+
+  <div class="card"style="border:none; ">
+    <div class="card-header" type="button" data-toggle="collapse" href="#collapseTwo" style="background: linear-gradient(to bottom right , rgb(0, 0, 0),rgb(42, 30, 6), rgb(87, 63, 10)); border-radius: 0; border-bottom: 2px solid rgb(201, 167, 122); ">
+      <button class="collapsed card-link" style="border: 0; background: none; color: rgb(255, 196, 0);" >
+        CSS-Language
+      </button>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body" style="background-color: rgb(255, 235, 170);">
+        Pure strength and dominance. A single misstep turns into an execution. Once his stacks are full, there’s no escape. 🩸🪓
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="border:none; ">
+    <div class="card-header" type="button" data-toggle="collapse" href="#collapseThree" style="background: linear-gradient(to bottom right, rgb(0, 0, 0),rgb(42, 30, 6), rgb(87, 63, 10)); border-radius: 0; border-bottom: 2px solid rgb(201, 167, 122); ">
+      <button class="collapsed card-link" style="border: 0; background: none; color: rgb(255, 196, 0);" >
+        JAVA-SCRIPT
+      </button>
+    </div>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div class="card-body" style=" background-color: rgb(255, 235, 170);  ">
+        The shadow strikes before you even realize it. Silent, deadly, and always disappears after the kill.
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="container-fluid text-lg p-4 " style="background: linear-gradient(to top right, rgb(12, 8, 0),rgb(34, 24, 6), rgb(87, 63, 10)); border-radius: 0; ">
+   <h3 class="text-light  text-center "><i><b>Translate from Arabic to English</b></i></h3>
+</div>
+
+<div class="container-fluid p-3" style="background: linear-gradient(to bottom left, rgb(18, 12, 0),rgb(34, 24, 6), rgb(87, 63, 10)); border-radius: 0; ">
+    <span class="text-light" style="font-size: 22px; "><b>Write And Translate</b></span>
+    <span class="fs-4 " style="font-size: 22px; color: rgb(255, 169, 0);"><b>&nbsp Press Here</b></span><br>
+     
+    <button type="button" class="btn btn-warning text-dark copyBtn" data-toggle="modal" data-target="#myModal1">
+        <b>Copy</b>
+    </button>
+    <span class="badge rounded-pill bg-secondary ms-2 copiedLabel d-none">Copied!</span>
+
+    <br><br>
+    <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog mt-5">
+            <div class="modal-content" style="background-color: rgb(255, 247, 219); border-radius: 7px; ">
+                <div class="modal-header border-bottom">
+                    <h5 class="modal-title" style="color: rgb(255, 169, 0);"><i><b>SEF ACADEMY</b></i></h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <b>The Message Copied</b>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal"><b>OK</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <textarea class="rounded mt-2 w-100 p-2 translate" style="height: 150px; background-color: rgb(62, 43, 0); color: rgb(255, 235, 170);" placeholder="translate:"></textarea>
+</div>
+<hr>
+<div class="container-fluid text-lg p-4 " style="background: linear-gradient(to top right, rgb(9, 6, 0),rgb(34, 24, 6), rgb(87, 63, 10)); border-radius: 0; ">
+   <h3 class="text-light  text-center "><i><b>Translate from Arabic to English</b></i></h3>
+</div>
+
+<div class="container-fluid p-3" style="background: linear-gradient(to bottom left, rgb(18, 12, 0),rgb(34, 24, 6), rgb(87, 63, 10)); border-radius: 0; ">
+    <span class="text-light" style="font-size: 22px; "><b>Write And Translate</b></span>
+    <span class="fs-4 " style="font-size: 22px; color: rgb(255, 169, 0);"><b>&nbsp Press Here</b></span><br>
+     
+    <button type="button" class="btn btn-warning text-dark copyBtn" data-toggle="modal" data-target="#myModal1">
+        <b>Copy</b>
+    </button>
+    <span class="badge rounded-pill bg-secondary ms-2 copiedLabel d-none">Copied!</span>
+
+    <br><br>
+    <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog mt-5">
+            <div class="modal-content" style="background-color: rgb(255, 247, 219); border-radius: 7px;">
+                <div class="modal-header border-bottom">
+                    <h5 class="modal-title" style="color: rgb(255, 169, 0);"><i><b>SEF ACADEMY</b></i></h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <b>The Message Copied</b>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal"><b>OK</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <textarea class="rounded mt-2 w-100 p-2 translate" style="height: 150px; background-color: rgb(62, 43, 0); color: rgb(255, 235, 170);" placeholder="translate:"></textarea>
+</div>
+<hr>
+<div class="container-fluid text-lg p-4 " style="background: linear-gradient(to top right, rgb(9, 6, 0),rgb(34, 24, 6), rgb(87, 63, 10)); border-radius: 0; ">
+   <h3 class="text-light  text-center "><i><b>Translate from Arabic to English</b></i></h3>
+</div>
+
+<div class="container-fluid p-3" style="background: linear-gradient(to bottom left, rgb(18, 12, 0),rgb(34, 24, 6), rgb(87, 63, 10)); border-radius: 0; ">
+    <span class="text-light" style="font-size: 22px; "><b>Write And Translate</b></span>
+    <span class="fs-4 " style="font-size: 22px; color: rgb(255, 169, 0);"><b>&nbsp Press Here</b></span><br>
+     
+    <button type="button" class="btn btn-warning text-dark copyBtn" data-toggle="modal" data-target="#myModal1">
+        <b>Copy</b>
+    </button>
+    <span class="badge rounded-pill bg-secondary ms-2 copiedLabel d-none">Copied!</span>
+
+    <br><br>
+    <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog mt-5">
+            <div class="modal-content" style="background-color: rgb(255, 247, 219); border-radius: 7px;">
+                <div class="modal-header border-bottom">
+                    <h5 class="modal-title" style="color: rgb(255, 169, 0);"><i><b>SEF ACADEMY</b></i></h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <b>The Message Copied</b>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal"><b>OK</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <textarea class="rounded mt-2 w-100 p-2 translate" style="height: 150px; background-color: rgb(62, 43, 0); color: rgb(255, 235, 170);" placeholder="translate:"></textarea>
+</div>
+<hr>
+
+<div class="container-fluid" style="background-image: url(images/web2.jpg); height: 350px; background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;"></div>
+
+<div class="container-fluid text-lg p-4 mt-5" style="background: linear-gradient(to top right, rgb(9, 6, 0),rgb(34, 24, 6), rgb(87, 63, 10)); ">
+   <h3 class="text-light  text-center "><i><b>Translate from Arabic to English</b></i></h3>
+</div>
+
+<section>
+  <div class="container my-5">
+      <div class="row g-4 justify-content-center">
+          <div class="col-sm-4 col-103">
+              <div class="card h-100 special-card"  style="box-shadow: 2.5px 2.5px 13px 0px rgb(255, 216, 20), -1px -1px 3px 0px white; background-color:rgb(36, 26, 0); color: rgb(255, 247, 219);">
+                  <div class="p-2">
+                      <img src="images/web2.jpg" class="card-img-top" alt="image" style="height: 250px;">
+                  </div>
+
+                  <div class="card-body" >
+                      <h5 class="card-title" style="color: rgb(255, 169, 0);"><b><i>FRONTEND</i></b></h5>
+                      <div class="d-flex">
+                          <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4"><b>SHOW</b></a>
+                      </div>
+                      <p class="card-text mt-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error iste voluptatem quibusdam, porro rem pariatur deserunt esse veniam.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-4 col-10">
+              <div class="card h-100 special-card" style="box-shadow: 2.5px 2.5px 13px 0px rgb(255, 216, 20), -1px -1px 3px 0px white; background-color:rgb(36, 26, 0); color: rgb(255, 247, 219);">
+                  <div class="p-2">
+                      <img src="images/html.jpg" class="card-img-top" alt="image" style="height: 250px;">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(255, 169, 0);"><b><i>HTML</i></b></h5>
+                      <div class="d-flex">
+                          <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4"><b>SHOW</b></a>
+                      </div>
+                      <p class="card-text mt-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error iste voluptatem quibusdam, porro rem pariatur deserunt esse veniam.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-4 col-10">
+              <div class="card h-100 special-card" style="box-shadow: 2.5px 2.5px 13px 0px rgb(255, 216, 20), -1px -1px 3px 0px white; background-color:rgb(36, 26, 0); color: rgb(255, 247, 219);">
+                  <div class="p-2">
+                      <img src="images/Css.jpg" class="card-img-top" alt="image" style="height: 250px;">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(255, 169, 0);"><b><i>CSS</i></b></h5>
+                      <div class="d-flex">
+                          <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4"><b>SHOW</b></a>
+                      </div>
+                      <p class="card-text mt-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error iste voluptatem quibusdam, porro rem pariatur deserunt esse veniam.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row g-4 mt-4 justify-content-center">
+          <div class="col-sm-4 col-10">
+              <div class="card h-100 special-card" style="box-shadow: 2.5px 2.5px 13px 0px rgb(255, 216, 20), -1px -1px 3px 0px white; background-color:rgb(36, 26, 0); color: rgb(255, 247, 219);">
+                  <div class="p-2">
+                      <img src="images/BACKEND.png" class="card-img-top" alt="image" style="height: 250px;">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(255, 169, 0);"><b><i>BACKEND</i></b></h5>
+                      <div class="d-flex">
+                          <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4"><b>SHOW</b></a>
+                      </div>
+                      <p class="card-text mt-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error iste voluptatem quibusdam, porro rem pariatur deserunt esse veniam.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-4 col-10">
+              <div class="card h-100 special-card" style="box-shadow: 2.5px 2.5px 13px 0px rgb(255, 216, 20), -1px -1px 3px 0px white; background-color:rgb(36, 26, 0); color: rgb(255, 247, 219);">
+                  <div class="p-2">
+                      <img src="images/sql.jpg" class="card-img-top" alt="image" style="height: 250px;">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(255, 169, 0);"><b><i>MYSQL</i></b></h5>
+                      <div class="d-flex">
+                          <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4"><b>SHOW</b></a>
+                      </div>
+                      <p class="card-text mt-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error iste voluptatem quibusdam, porro rem pariatur deserunt esse veniam.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-4 col-10">
+              <div class="card h-100 special-card" style="box-shadow: 2.5px 2.5px 13px 0px rgb(255, 216, 20), -1px -1px 3px 0px white; background-color:rgb(36, 26, 0); color: rgb(255, 247, 219);">
+                  <div class="p-2">
+                      <img src="images/front.jpg" class="card-img-top" alt="image" style="height: 250px;">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(255, 169, 0);"><b><i>JAVA-SCRIPT</i></b></h5>
+                      <div class="d-flex">
+                          <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4"><b>SHOW</b></a>
+                      </div>
+                      <p class="card-text mt-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error iste voluptatem quibusdam, porro rem pariatur deserunt esse veniam.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row g-5 mt-4 justify-content-center">
+          <div class="col-sm-4 col-10 mb-5">
+              <div class="card h-100 special-card" style="box-shadow: 2.5px 2.5px 13px 0px rgb(255, 216, 20), -1px -1px 3px 0px white; background-color:rgb(36, 26, 0); color: rgb(255, 247, 219);">
+                  <div class="p-2">
+                      <img src="images/FRONTEND.jpg" class="card-img-top" alt="image" style="height: 250px;">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(255, 169, 0);"><b><i>DATA-BASE</i></b></h5>
+                      <div class="d-flex">
+                          <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4"><b>SHOW</b></a>
+                      </div>
+                      <p class="card-text mt-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error iste voluptatem quibusdam, porro rem pariatur deserunt esse veniam.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-4 col-10 mb-5">
+              <div class="card h-100 special-card" style="box-shadow: 2.5px 2.5px 13px 0px rgb(255, 216, 20), -1px -1px 3px 0px white; background-color:rgb(36, 26, 0); color: rgb(255, 247, 219);">
+                  <div class="p-2">
+                      <img src="images/pro1.jpg" class="card-img-top" alt="image" style="height: 250px;">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(255, 169, 0);"><b><i>BOOTSTRAB</i></b></h5>
+                      <div class="d-flex">
+                          <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4"><b>SHOW</b></a>
+                      </div>
+                      <p class="card-text mt-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error iste voluptatem quibusdam, porro rem pariatur deserunt esse veniam.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid"
+            style="background-image: url(images/html.jpg); height: 350px; background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+        </div>
+        <hr>
+    </section>
+
+
+<section>
+<div class="container-fluid text-lg p-4 " style="background: linear-gradient(to top right, rgb(9, 6, 0),rgb(34, 24, 6), rgb(87, 63, 10)); border-radius: 0; ">
+   <h3 class="text-light  text-center "><i><b>Translate from Arabic to English</b></i></h3>
+</div>
+
+  <div class="container 5  px-5 " style="margin-top: 80px;">
+      <div class="row justify-content-center" style="gap: 50px;">
+          <div class="col-sm-3 col-8">
+              <div class="card bg-dark text-white custom-card" style="height: 250px;border-radius: 20px;">
+                  <img src="images/img1.jpg" class="card-img h-100" alt="image" style="border-radius: 20px;">
+                  <div class="card-img-overlay h-100"
+                      style="background-color: rgba(43, 43, 43, 0.664);border-radius: 20px;">
+                      <h5 class="card-title" style="font-size:15px;color: rgb(255, 169, 0)"><b><i>All Thanks
+                                  And Appreciation</i></b></h5>
+                      <p class="card-text" style="color: rgb(255, 245, 212)">🕔 June 22, 2023</p>
+                      <img src="images/img1.jpg" alt="image"
+                          class="rounded-pill border border-2 border-white position-absolute"
+                          style="width: 70px; height: 90px; bottom: 55px; left: 20px; object-fit: cover;" />
+                      <div style="position: absolute; bottom: 5px; left: 20px;">
+                          <p class="mb-1 fw-semibold" style="font-size: 1rem;">Eng.Salem Mohamed</p>
+                          <p class="mb-0 fst-italic" style="font-size: 0.9rem;">Director Of UI/UX</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-3 col-8">
+              <div class="card bg-dark text-white custom-card" style="height: 250px;border-radius: 20px;">
+                  <img src="images/img2.jpg" class="card-img h-100" alt="image" style="border-radius: 20px;">
+                  <div class="card-img-overlay h-100"
+                      style="background-color: rgba(43, 43, 43, 0.664);border-radius: 20px;">
+                      <h5 class="card-title " style="font-size:15px;color: rgb(255, 169, 0)"><b><i>All Thanks
+                                  And
+                                  Appreciation</i></b></h5>
+                      <p class="card-text" style="color: rgb(255, 245, 212)">🕔 June 22, 2023</p>
+                      <img src="images/img2.jpg" alt="image"
+                          class="rounded-pill border border-2 border-white position-absolute"
+                          style="width: 70px; height: 90px; bottom: 55px; left: 20px; object-fit: cover;" />
+                      <div style="position: absolute; bottom: 5px; left: 20px;">
+                          <p class="mb-1 fw-semibold" style="font-size: 1rem;">Eng. Mohamed Ilady</p>
+                          <p class="mb-0 fst-italic" style="font-size: 0.9rem;">Content Creator</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-3 col-8">
+              <div class="card bg-dark text-white custom-card" style="height: 250px;border-radius: 20px;">
+                  <img src="images/eslam2.jpg" class="card-img h-100" alt="image" style="border-radius: 20px;">
+                  <div class="card-img-overlay h-100"
+                      style="background-color: rgba(43, 43, 43, 0.664);border-radius: 20px;">
+                      <h5 class="card-title " style="font-size:15px;color: rgb(255, 169, 0)"><b><i>All Thanks
+                                  And
+                                  Appreciation</i></b></h5>
+                      <p class="card-text" style="color: rgb(255, 245, 212)">🕔 June 22, 2023</p>
+                      <img src="images/eslam2.jpg" alt="image"
+                          class="rounded-pill border border-2 border-white position-absolute"
+                          style="width: 70px; height: 90px; bottom: 55px; left: 20px; object-fit: cover;" />
+                      <div style="position: absolute; bottom: 5px; left: 20px;">
+                          <p class="mb-1 fw-semibold" style="font-size: 1rem;">Eng. Amgad Fathy</p>
+                          <p class="mb-0 fst-italic" style="font-size: 0.9rem;">Web Developer</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+        <h3 class="text-center" style="color:rgb(255, 169, 0) ;margin-top: 100px;"><b><i>Restaurant News</i></b></h3>
+        <div class="container-md wider-container px-0 px-md-3" style="margin-top: 40px;">
+            <div class="card w-100 px-3 podcastdiv1">
+                <div class="row g-0 h-100 podcastdiv">
+                    <div class="col-md-4 clip-slant order-1 order-md-2 d-none d-lg-block">
+                        <div class="special-image special-image1 min-vh-25 h-100"></div>
+                    </div>
+                    
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title fs-3" style="color: rgb(255, 169, 0);"><b><i>Podcast Title</i></b></h3>
+                            <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2020</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, doloribus! Dolorem odio dicta quam, eveniet a accusantium suscipit facere assumenda est labore delectus totam, magnam porro iure cum quasi aliquid!
+                                Architecto alias laborum aliquid distinctio, exercitationem omnis! Maxime animi pariatur ab dignissimos dolore cumque ipsa, atque perferendis obcaecati, aut ducimus deserunt? Eos sequi, tempora eveniet ut repellat fuga. Quis, quae?
+                            </p>
+                            <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 me-1 fs-6">🎙 Podcast</button>
+                            <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 me-1 fs-6">🕔45 mins</button>
+                            <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 fs-6">▶ Play Episode</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card w-100 px-3 podcastdiv1">
+                <div class="row g-0 h-100 podcastdiv">
+                    <div class="col-md-4  order-1 order-md-1 d-none d-md-block clip-slant2">
+                        <div class="special-image special-image2 min-vh-25 h-100"></div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-1 d-md-none d-block clip-rect">
+                        <div class="special-image special-image2 "></div>
+                    </div>
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title fs-3" style="color: rgb(255, 169, 0);"><b><i>Podcast Title</i></b></h3>
+                            <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2020</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat hic ipsa fugit rem provident quas ullam, quis repellat eum odio libero vel ut tenetur pariatur error doloremque eos, ratione expedita.
+                                Nesciunt, laudantium itaque officiis voluptatum quam ullam rem numquam dolorum facere, vel animi accusamus consectetur. Obcaecati, saepe voluptates doloremque labore, ipsam nisi aut dolorum officiis, dolore dolor corrupti odit eligendi.
+                            </p>
+                           <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 me-1 fs-6">🎙 Podcast</button>
+                            <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 me-1 fs-6">🕔45 mins</button>
+                            <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 fs-6">▶ Play Episode</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="card w-100 px-3 podcastdiv1">
+                <div class="row g-0 h-100 podcastdiv">
+                    <div class="col-md-4 clip-slant order-1 order-md-2 d-none d-md-block">
+                        <div class="special-image special-image3 min-vh-25 h-100"></div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-2 d-md-none d-block clip-rect">
+                        <div class="special-image special-image3 "></div>
+                    </div>
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title fs-3" style="color: rgb(255, 169, 0);"><b><i>Podcast Title</i></b></h3>
+                            <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2" style="font-size: 12px;">
+                                <b>Mon.May 25th 2020</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rem dolorem qui accusantium, doloremque reprehenderit sunt beatae eius. Nisi repellendus mollitia magnam at perspiciatis provident nostrum labore odit repellat officia.
+                                Corrupti nisi dolores laboriosam, nihil illo eum, maxime ducimus numquam pariatur voluptates possimus eligendi autem reprehenderit aliquam, architecto perspiciatis omnis expedita debitis vero itaque veniam. Eaque temporibus repudiandae voluptatibus qui.
+                            </p>
+                            <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 me-1 fs-6">🎙 Podcast</button>
+                            <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 me-1 fs-6">🕔45 mins</button>
+                            <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 fs-6">▶ Play Episode</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+       <div class="card mb-3 w-100 px-3 podcastdiv1">
+                <div class="row g-0 h-100 podcastdiv">
+                <div class="col-md-4  order-1 order-md-1 d-none d-md-block clip-slant2">
+                    <div class="special-image special-image4 min-vh-25 h-100"></div>
+                </div>
+                <div class="col-md-4 order-1 order-md-1 d-md-none d-block clip-rect">
+                    <div class="special-image special-image4 "></div>
+                </div>
+                <div class="col-md-8 d-flex order-2 order-md-1">
+                    <div class="card-body my-auto">
+                        <h3 class="card-title fs-3" style="color: rgb(255, 169, 0);"><b><i>Podcast Title</i></b></h3>
+                        <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2" style="font-size: 12px;">
+                            <b>Mon.May 25th 2020</b>
+                        </p>
+                        <p class="card-text fs-6 d-none d-md-block">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolore dicta molestiae vero at sed asperiores repudiandae, hic nam excepturi mollitia consectetur praesentium alias natus qui? Quas impedit alias quam?
+                            Reprehenderit necessitatibus repudiandae repellat nisi saepe dolore, eligendi, maiores omnis sit, accusamus eum perspiciatis vel? Aliquid incidunt ratione, maiores vero amet aliquam atque obcaecati autem accusamus, ex excepturi dignissimos dolore.
+                        </p>
+                        <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 me-1 fs-6">🎙 Podcast</button>
+                            <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 me-1 fs-6">🕔45 mins</button>
+                            <button href="#" type="button" class="podcastbtn btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 fs-6">▶ Play Episode</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <section>
+        <div class="container w-75" style="margin-top: 100px;">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-dark special-card2" style="width: 170px;height: 180px; border-radius: 7px; background-color: rgb(22, 16, 2);">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="font-size: 18.5px; color:rgb(69, 180, 47) ;"><b><i>Subscribe Now</i></b></h4>
+                            <img src="images/whatsapp.jpg" alt="image" class="img-fluid " style="margin-top: -5px;"><br>
+                            <a href="#" class="d-inline-block ">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-dark special-card2" style="width: 170px;  height: 180px; border-radius: 7px; background-color: rgb(22, 16, 2);">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="font-size: 18.5px; color: rgb(25, 125, 255);">
+                                <b><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="images/twiter.jpg" alt="image" class="img-fluid d-block mx-auto "
+                                style="width: 70px; height: 70px;margin-top: 16px; ">
+                            <a href="#" class="d-inline-block mt-3">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-dark special-card2"
+                        style="width: 170px;  height: 180px; border-radius: 7px; background-color: rgb(22, 16, 2);">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="font-size: 18.5px; color: rgb(255, 145, 0);">
+                                <b><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="images/inesta.jpg" alt="image" class="img-fluid d-block mx-auto "
+                                style="width: 70px; height: 70px; margin-top: 16px; ">
+                            <a href="#" class="d-inline-block mt-3">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-dark special-card2"
+                        style="width: 170px;  height: 180px; border-radius: 7px; background-color: rgb(22, 16, 2);">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="font-size: 18.5px; color: rgb(43, 112, 196);">
+                                <b><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="images/linked.jpg" alt="image" class="img-fluid d-block mx-auto "
+                                style="width: 70px; height: 70px; margin-top: 16px; ">
+                            <a href="#" class="d-inline-block mt-3">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container-fluid" style="margin-top: 100px; background-color: rgb(24, 14, 0) ; box-shadow: 0px 0px 10px rgb(233, 167, 5);">
+            <br>
+            <hr>
+            <div class="container py-3 d-none d-sm-block">
+                <div class="row text-center align-items-center mb-2">
+                    <div class="col-sm-4">
+                        <img src="images/download.png" alt="image" class="background2" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(255, 213, 89); margin-top:10px;">
+                            <b><i>Good Academy</i></b>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/download.png" alt="image" class="background2" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(255, 213, 89); margin-top:10px;">
+                            <b><i>Important Links</i></b>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/download.png" alt="image" class="background2" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(255, 213, 89); margin-top:10px;">
+                            <b><i>Vision</i></b>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border-color:#5a6670; margin: 8px 0;">
+                <div class="row text-center mt-2">
+                    <div class="col-sm-4">
+                        <p style="color:rgb(255, 245, 212); margin:2px 0;">Tel: 000-000-000</p>
+                        <p style="color:rgb(255, 245, 212); margin:2px 0;">Address: EGYPT</p>
+                        <p style="color:rgb(255, 245, 212); margin:2px 0;">Fax: 000-000-000</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="color:rgb(255, 245, 212); margin:2px 0;">Visit Us</p>
+                        <p style="color:rgb(255, 245, 212); margin:2px 0;">Take A Look</p>
+                        <p style="color:rgb(255, 245, 212); margin:2px 0;">Your Health imageIs More Important</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="color:rgb(255, 245, 212); margin:2px 0;">Services For All</p>
+                        <p style="color:rgb(255, 245, 212); margin:2px 0;">Provide Best Services</p>
+                        <p style="color:rgb(255, 245, 212); margin:2px 0;">You Will Be Better Than Before</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-4 d-block d-sm-none">
+                <div class="row text-center mb-3">
+                    <div class="col-12">
+                        <img src="images/Css.jpg" alt="image" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(255, 245, 212); margin-top:10px;">
+                            <b><i>Good Company</i></b>
+                        </div>
+                        <p style="color:rgb(255, 245, 212); margin-top:8px;">Tel: 000-000-000</p>
+                        <p style="color:rgb(255, 245, 212);">Address: EGYPT</p>
+                        <p style="color:rgb(255, 245, 212);">Fax: 000-000-000</p>
+                        <hr style="border-color:#5a6670;">
+                    </div>
+                </div>
+                <div class="row text-center mb-3">
+                    <div class="col-12">
+                        <img src="images/Css.jpg" alt="image" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(255, 245, 212); margin-top:10px;">
+                            <b><i>Important Links</i></b>
+                        </div>
+                        <p style="color:rgb(255, 245, 212); margin-top:8px;">Visit Us</p>
+                        <p style="color:rgb(255, 245, 212);">Take A Look</p>
+                        <p style="color:rgb(255, 245, 212);">Your Health imageIs More Important</p>
+                        <hr style="border-color:#5a6670;">
+                    </div>
+                </div>
+                <div class="row text-center mb-3">
+                    <div class="col-12">
+                        <img src="images/Css.jpg" alt="image" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(255, 245, 212); margin-top:10px;">
+                            <b><i>Vision</i></b>
+                        </div>
+                        <p style="color:rgb(255, 235, 170); margin-top:8px;">Services For All</p>
+                        <p style="color:rgb(255, 235, 170);">Provide Best Services</p>
+                        <p style="color:rgb(255, 235, 170);">You Will Be Better Than Before</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin:10px 0;">
+            <h5 class="text-center"  style="margin: 0; color: rgb(255, 232, 156);">
+                <b>© 2025 SEF ACADEMY. All Rights Reserved. Designed By Eng/ <span style="color: rgb(255, 230, 147); font-size: 21px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Eslam Sakr .</span></b>
+            </h5><br>
+        </div>
+    </footer>
+
+
+    <div style="width: 100%; height: 7px;"></div>
+    <script src="scrips.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
